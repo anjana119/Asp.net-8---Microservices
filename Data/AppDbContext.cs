@@ -10,7 +10,7 @@ namespace NewMicroServices.Data
 
         }
 
-        public DbSet<Flight1> Flights {get;set;}
+        public DbSet<Flight> Flights {get;set;}
 
         internal async Task<HttpResponseMessage> GetAsync(string apiUrl)
         {

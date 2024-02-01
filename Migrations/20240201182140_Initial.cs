@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -19,8 +20,8 @@ namespace NewMicroServices.Migrations
                     FlightNumber = table.Column<string>(type: "TEXT", nullable: false),
                     DepartureCity = table.Column<string>(type: "TEXT", nullable: false),
                     DestinationCity = table.Column<string>(type: "TEXT", nullable: false),
-                    DepartureTime = table.Column<string>(type: "TEXT", nullable: false),
-                    ArrivalTime = table.Column<string>(type: "TEXT", nullable: false)
+                    DepartureTime = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ArrivalTime = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
